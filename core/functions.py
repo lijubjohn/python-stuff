@@ -192,3 +192,15 @@ testFunc.attr1 = "Hello"
 testFunc.attr2 = 5
 testFunc()
 print(dir(testFunc))
+
+# function definitions cannot be empty, but if you for some reason have a function definition with no content, put in the pass statement to avoid getting an error.
+
+def myfunction():
+  pass
+
+# Arbitrary Arguments, *args
+
+def my_function(*kids):
+  print("The youngest child is " + kids[2])
+
+my_function("Emil", "Tobias", "Linus")
